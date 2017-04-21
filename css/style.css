@@ -1,0 +1,233 @@
+/*Resize site logo*/
+#logo {
+  width:120px;
+  padding:10px;
+}
+/*Set border radius for header and footer to match other content*/
+.navbar, .well {
+  border-radius:6px;
+}
+/*Resize social media icons in navbar*/
+.pull-right .fa {
+  font-size:2.5em;
+  color:#9d9d9d;
+}
+/*Change hover and focus effects for facebook icon*/
+.fa-facebook-square:hover, .fa-facebook-square:focus {
+  text-decoration:none;
+  color:#3b5998;
+}
+/*Change hover and focus effects for twitter icon*/
+.fa-twitter-square:hover, .fa-twitter-square:focus {
+  text-decoration:none;
+  color:#55acee;
+}
+/*Change hover and focus effects for github icon*/
+.fa-github-square:hover, .fa-github-square:focus {
+  text-decoration:none;
+  color:#4078c0;
+}
+/*Change hover and focus effects for linkedin icon*/
+.fa-linkedin-square:hover, .fa-linkedin-square:focus {
+  text-decoration:none;
+  color:#0077b5;
+}
+/*Change color of footer section and remove padding below*/
+.well {
+  background-color:#333;
+  color:#9d9d9d;
+  margin-top:30px;
+  margin-bottom:0;
+  padding:30px;
+  border:none;
+}
+/*Space out text on all pages*/
+p {
+  line-height:2;
+}
+/*Resize font awesome icons used as bullet points in Resume*/
+p .fa {
+  font-size:.75em;
+}
+/*Resize letters for resume title*/
+h2 .small {
+  color:#337ab7;
+  font-size:.85em;
+}
+/*Resize letters for resume subtitles*/
+h3 .small {
+  color:#333;
+  font-size:.85em;
+}
+/*Add border on all sides of top row*/
+.resume-table > div:first-child {
+  border:1px solid #333;
+  border-radius:6px 6px 0 0;
+}
+/*Round edges of resume-table*/
+.resume-table > div:last-child {
+  border-radius:0 0 6px 6px;
+}
+/*Add left, right, and bottom borders for lower rows*/
+.resume-table > div {
+  border-left:1px solid #333;
+  border-right:1px solid #333;
+  border-bottom:1px solid #333;
+}
+/*Add border between columns on all rows*/
+.resume-table > div > div:last-child {
+  border-left:1px solid #333;
+}
+/*Remove negative margins to keep table in line with rest of content*/
+.resume-table .row, .courses {
+  margin-left:0;
+  margin-right:0;
+}
+/*Add padding between bullet points and text*/
+ul .fa {
+  padding:6.5px 7px;
+  float:left;
+  font-size:.75em;
+}
+/*Fix bullet points not aligning*/
+.fa-ul li {
+  clear:both;
+}
+/*Style for background on interests page*/
+.main > .well-lg {
+  background-color:#eee;
+  margin-left:0;
+  margin-right:0;
+}
+/*Add spacing between interests on interests page*/
+.interests {
+  margin-top:20px;
+  padding:39px 24px;
+}
+/*Add bottom margin to images to separate from headers on smaller screens*/
+.interests img {
+  margin-bottom:10px;
+}
+/*Remove top margin from h2 element for interests and courses pages*/
+.interests .col-lg-8 h2, .interests .col-md-8 h2, .well-lg h2 {
+  margin-top:0;
+}
+/*Add padding to left-side course boxes*/
+.courses .well-lg {
+  padding:39px;
+  background-color:#eee;
+  margin:0 1% 20px 0;
+  width:49%;
+}
+/*Add padding to right-side course boxes*/
+.courses .well-lg:nth-child(n+2) {
+  padding:39px;
+  background-color:#eee;
+  margin:0 0 20px 1%;
+  width:49%;
+}
+/*CSS for pdf modal used on Resume and Course Studies pages*/
+.iframe-container {
+  padding-bottom: 60%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+/*CSS for pdf modal used on Resume and Course Studies pages*/
+.iframe-container iframe, .iframe-container object, .iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*CSS for pdf modal used on Resume and Course Studies pages*/
+.modal.in .modal-dialog {
+  transform: none;
+  /*translate(0px, 0px);*/
+}
+/*Set height of course titles to match courses that span two rows*/
+.courses h4 {
+  height:57px;
+}
+/*Resize tech icons used on Course Studies page*/
+.icon-javascript-alt, .icon-php-alt {
+  font-size:inherit;
+  line-height:30px;
+  margin-right:-6px;
+}
+/*Style for collapsing panels on Course Studies page*/
+.courses .panel-heading {
+  padding:15px 0 15px 15px;
+  border-radius:6px;
+  background-color:#333;
+  color:#9d9d9d;
+}
+/*Hover style for collapsing panels on Course Studies page*/
+.panel-title a:hover, .panel-title a:focus {
+  color:#fff;
+  text-decoration:none;
+}
+/*Match h5 font size and align with accordion h5*/
+.courses > .well-lg > h5 {
+  font-size:16px;
+  margin-left:16px;
+}
+/*Style for panel body on Course Studies page*/
+.courses .panel-body {
+  background-color:#fff;
+  border-radius:6px;
+}
+/*========================================
+---------Mobile Specific CSS--------------
+=========================================/
+/*Remove the border between columns when become stacked*/
+@media only screen and (max-width:767px) {
+  .resume-table > div > div:last-child {
+    border-left:none;
+  }
+}
+/*Apply 100% width to courses for smaller screens*/
+@media only screen and (max-width:991px) {
+  .courses .well-lg, .courses .well-lg:nth-child(n+2) {
+    margin:0 0 20px 0;
+    width:100%;
+  }
+}
+/*Fix li content not aligning on bullet point for resume page*/
+@media only screen and (max-width:991px) {
+  ul .fa {
+    padding:6.5px 7px 30px;
+  }
+}
+@media only screen and (max-width:668px) {
+  ul .fa {
+    padding:6.5px 7px 45px;
+  }
+  .fa-ul li:last-child {
+    padding-bottom:45px;
+  }
+}
+@media only screen and (max-width:535px) {
+  ul .fa {
+    padding:6.5px 7px 65px;
+  }
+}
+@media only screen and (max-width:450px) {
+  ul .fa {
+    padding:6.5px 7px 85px;
+  }
+}
+@media only screen and (max-width:402px) {
+  ul .fa {
+    padding:6.5px 7px 105px;
+  }
+}
+@media only screen and (max-width:365px) {
+  ul .fa {
+    padding:6.5px 7px 125px;
+  }
+  .fa-ul li:last-child {
+    padding-bottom:65px;
+  }
+}
